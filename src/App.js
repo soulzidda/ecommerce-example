@@ -12,6 +12,7 @@ import { auth } from "./firebase/firebase.utils";
 class App extends React.Component {
   constructor() {
     super();
+
     this.state = {
       currentUser: null
     };
@@ -21,7 +22,9 @@ class App extends React.Component {
 
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-      this.state({ currentUser: user });
+      this.setState({ currentUser: user });
+
+      console.log(user);
     });
   }
 
