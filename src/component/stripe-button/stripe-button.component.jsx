@@ -1,5 +1,4 @@
 import React from "react";
-
 import StripeCheckout from "react-stripe-checkout";
 
 const StripeCheckoutButton = ({ price }) => {
@@ -16,9 +15,9 @@ const StripeCheckoutButton = ({ price }) => {
       label="Pay Now"
       name="ecommerce-example"
       billingAddress
-      shippingAddress="true"
+      shippingAddress
       image="https://svgshare.com/i/CUz.svg"
-      currency="Eur"
+      currency="EUR"
       description={`Your total is $${price}`}
       amount={priceForStripe}
       panelLabel="Pay Now"
