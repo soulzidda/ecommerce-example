@@ -18,6 +18,8 @@ dependancies.
   <li>"reselect": "^4.0.0"</li>
   <li>"styled-components": "^4.4.1"</li>
  </ul>
+ 
+ Shop data is embedded inside Firebase as is user authentication. New shop items should be inputted into Firebase in order to add to shop, not the code itself.
 
 you can access and use the completed project at https://ecommercex-live.herokuapp.com/
 
